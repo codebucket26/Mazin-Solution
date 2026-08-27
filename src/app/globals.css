@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand-orange: var(--color-gold);
+  --color-brand-gold: var(--color-gold);
+  --color-brand-dark: var(--color-navy);
+  --color-brand-gray: #4a5d73; /* A slightly lighter navy for gray text readability */
+  --color-brand-light: var(--color-white);
+
+  --color-navy: #092646;   /* primary — headers, text, backgrounds, buttons */
+  --color-gold: #C38A19;   /* accent — CTAs, highlights, underlines, icons */
+  --color-white: #FEFEFE;  /* base background / text on dark */
+
+  --font-sans: var(--font-inter), "Arial", sans-serif;
+  --font-heading: var(--font-sora), "Poppins", sans-serif;
+}
+
+:root {
+  --background: var(--color-white);
+  --foreground: var(--color-navy);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--color-navy);
+    --foreground: var(--color-white);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
