@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
 
@@ -64,7 +64,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2 z-50 relative" onClick={() => setIsMobileMenuOpen(false)}>
           <div className="relative w-56 h-14 md:w-72 md:h-20">
             <Image
-              src="/images/mazinlogo.jpeg"
+              src={isHome && !isScrolled ? "/images/whitelogo.png" : "/images/mazinlogo.jpeg"}
               alt="Mazin Solution"
               fill
               className="object-contain object-left"
@@ -131,9 +131,13 @@ export function Navbar() {
         </nav>
 
         {/* Desktop CTA */}
-        <div className="hidden lg:block">
-          <Button asChild variant="default" className="rounded-none">
-            <Link href="/contact">Get a Quote</Link>
+        <div className="hidden lg:block relative group/cta">
+          <div className="absolute -inset-1 bg-gradient-to-r from-brand-orange to-brand-gold rounded-full blur opacity-40 group-hover/cta:opacity-75 transition duration-500"></div>
+          <Button asChild variant="default" className="relative rounded-full bg-brand-orange hover:bg-brand-dark text-white font-bold px-8 py-6 h-auto transition-all duration-300 transform group-hover/cta:-translate-y-0.5 border border-brand-orange/50">
+            <Link href="/contact" className="flex items-center gap-2">
+              Get a Quote
+              <ArrowRight size={18} className="group-hover/cta:translate-x-1 transition-transform" />
+            </Link>
           </Button>
         </div>
 
@@ -226,10 +230,13 @@ export function Navbar() {
               asChild
               variant="default"
               size="lg"
-              className="mt-6 rounded-full w-full h-14 text-lg bg-brand-orange hover:bg-brand-dark transition-colors shadow-lg"
+              className="mt-6 relative rounded-full w-full h-14 text-lg bg-brand-orange hover:bg-brand-dark transition-all duration-300 shadow-[0_10px_20px_-10px_rgba(255,102,0,0.5)] group/mobcta overflow-hidden border border-brand-orange/50"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <Link href="/contact">Get a Quote</Link>
+              <Link href="/contact" className="flex items-center justify-center gap-2 z-10">
+                Get a Quote
+                <ArrowRight size={20} className="group-hover/mobcta:translate-x-1 transition-transform" />
+              </Link>
             </Button>
           </div>
         </div>

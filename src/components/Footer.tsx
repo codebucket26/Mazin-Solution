@@ -95,13 +95,12 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="text-brand-orange mt-1 shrink-0" size={20} />
                 <span className="text-gray-400 text-sm">
-                  123 Demo Street, Business Avenue<br />
-                  Tech District, City 12345
+                 Al Khater building, Al Jabal Street near Saudi Airlines, Jubail City Center, Al Jubail 31951, Saudi Arabia
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="text-brand-orange shrink-0" size={20} />
-                <span className="text-gray-400 text-sm">+1 234 567 8900</span>
+                <span className="text-gray-400 text-sm">+966 53 322 4176</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="text-brand-orange shrink-0" size={20} />

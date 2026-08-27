@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, HardHat, Building2, Wrench, Factory, Truck, Calendar, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { AnimatedReveal } from "@/components/AnimatedReveal";
+import { ClientsMarquee } from "@/components/ClientsMarquee";
 
 
 const services = [
@@ -71,9 +72,9 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10 pt-20">
           <div className="max-w-4xl">
             <AnimatedReveal direction="up" delay={0.1}>
-              <div className="flex items-center gap-4 mb-6">
+              <div className="flex items-center gap-4 mb-6 lg:mt-10">
                 <span className="w-12 h-[2px] bg-brand-orange block" />
-                <span className="text-brand-orange font-bold uppercase tracking-widest text-sm">Industrial Supply & Services</span>
+                <span className=" text-brand-orange font-bold uppercase tracking-widest text-sm">Industrial Supply & Services</span>
               </div>
             </AnimatedReveal>
             
@@ -291,6 +292,8 @@ export default function Home() {
           </AnimatedReveal>
         </div>
       </section>
+
+      <ClientsMarquee/>
 
       {/* Why Choose Us (Bento Box Grid) */}
       <section className="py-32 bg-white relative overflow-hidden">

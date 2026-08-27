@@ -2,7 +2,6 @@ import { Inter, Sora } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { CursorFollower } from "@/components/CursorFollower";
 import { PopupForm } from "@/components/PopupForm";
 
 const inter = Inter({
@@ -41,7 +40,6 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col pt-0" suppressHydrationWarning>
-        <CursorFollower />
         <PopupForm />
         <Navbar />
         <div className="flex-1">

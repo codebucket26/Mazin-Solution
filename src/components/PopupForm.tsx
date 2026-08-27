@@ -29,7 +29,7 @@ export function PopupForm() {
     const service = formData.get('service');
 
     const text = `*New Quick Enquiry*%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Interested In:* ${service}`;
-    const whatsappNumber = "12345678900";
+    const whatsappNumber = "966533224176";
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${text}`;
     
     window.open(whatsappUrl, '_blank');

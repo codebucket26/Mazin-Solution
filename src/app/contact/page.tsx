@@ -22,7 +22,7 @@ export default function ContactPage() {
     const text = `*New Contact Inquiry*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Phone:* ${phone}%0A*Subject:* ${subject}%0A*Message:* ${message}`;
     
     // WhatsApp Number (without plus)
-    const whatsappNumber = "12345678900";
+    const whatsappNumber = "966533224176";
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${text}`;
     
     window.open(whatsappUrl, '_blank');
@@ -66,8 +66,7 @@ export default function ContactPage() {
                     <div>
                       <h4 className="font-heading font-bold text-brand-dark mb-2">Head Office</h4>
                       <p className="text-brand-gray text-sm leading-relaxed">
-                        123 Demo Street, Business Avenue<br />
-                        Tech District, City 12345
+                         Al Khater building, Al Jabal Street near Saudi Airlines, Jubail City Center, Al Jubail 31951, Saudi Arabia
                       </p>
                     </div>
                   </div>
@@ -79,7 +78,7 @@ export default function ContactPage() {
                     <div>
                       <h4 className="font-heading font-bold text-brand-dark mb-2">Phone</h4>
                       <p className="text-brand-gray text-sm leading-relaxed">
-                        +1 234 567 8900
+                        +966 53 322 4176
                       </p>
                     </div>
                   </div>
@@ -114,7 +113,7 @@ export default function ContactPage() {
               <AnimatedReveal direction="up" delay={0.2}>
                 <div className="bg-white p-2 rounded-lg shadow-sm border border-gray-100 h-64 md:h-[450px] relative overflow-hidden">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.0272811059963!2d46.7751157!3d24.6915889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f06c96b28d157%3A0x96ce321ee3f850e8!2sEastern%20Ring%20Branch%20Rd%2C%20Riyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sin!4v1784269356745!5m2!1sen!2sin" 
+                    src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d56877.51408942987!2d49.6302281!3d27.0034642!3m2!1i1024!2i768!4f13.1!2m1!1sAl%20Khater%20building%20Al%20Jabal%20Street%20near%20Saudi%20Airlines%20Jubail%20City%20Center%20Al%20Jubail%2031951%20Saudi%20Arabia!5e0!3m2!1sen!2sin!4v1787853696810!5m2!1sen!2sin" 
                     width="100%" 
                     height="100%" 
                     style={{ border: 0 }} 
@@ -167,7 +166,7 @@ export default function ContactPage() {
                         id="phone" 
                         name="phone"
                         className="w-full px-4 py-3 bg-brand-light/50 border border-gray-200 rounded-md text-brand-dark focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all"
-                        placeholder="+1 (234) 567-8900"
+                        placeholder="+966 53 322 4176"
                       />
                     </div>
                     <div className="space-y-2">
@@ -210,7 +209,7 @@ export default function ContactPage() {
                 <div className="mt-8 pt-8 border-t border-gray-100 flex items-center justify-between">
                   <span className="text-brand-gray font-semibold text-sm">Need immediate assistance?</span>
                   <a 
-                    href="https://wa.me/12345678900" 
+                    href="https://wa.me/966533224176" 
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center gap-2 text-green-600 font-bold hover:text-green-700 transition-colors"
