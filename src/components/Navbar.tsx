@@ -45,7 +45,7 @@ export function Navbar() {
 
   return (
     <>
-      <div className={cn("fixed left-0 right-0 z-[60] transition-all duration-500 flex justify-center", isScrolled ? "top-0" : "top-0 md:top-6")}>
+      <div className={cn("fixed left-0 right-0 z-[60] transition-all duration-500 flex justify-center", isScrolled ? "top-0" : (isHome ? "top-4 md:top-6" : "top-0 md:top-6"))}>
       <header
         className={cn(
           "transition-all duration-500 w-full",
@@ -62,7 +62,7 @@ export function Navbar() {
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 z-50 relative" onClick={() => setIsMobileMenuOpen(false)}>
-          <div className="relative w-56 h-14 md:w-72 md:h-20">
+          <div className="relative w-72 h-16 md:w-80 md:h-20">
             <Image
               src={isHome && !isScrolled ? "/images/whitelogo.png" : "/images/mazinlogo.jpeg"}
               alt="Mazin Solution"
