@@ -64,7 +64,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-2 z-50 relative" onClick={() => setIsMobileMenuOpen(false)}>
           <div className="relative w-72 h-16 md:w-80 md:h-20">
             <Image
-              src={isHome && !isScrolled ? "/images/whitelogo.png" : "/images/mazinlogo.jpeg"}
+              src={isHome && !isScrolled ? "/images/whitelogo.png" : "/images/logo.png"}
               alt="Mazin Solution"
               fill
               className="object-contain object-left"
