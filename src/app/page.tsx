@@ -296,8 +296,8 @@ export default function Home() {
       <ClientsMarquee/>
 
       {/* Why Choose Us (Bento Box Grid) */}
-      <section className="py-32 bg-white relative overflow-hidden">
-        <div className="container mx-auto px-4">
+      <section className="py-32 bg-white relative overflow-hidden ">
+        <div className="container mx-auto px-4 -mt-20">
           <div className="text-center max-w-3xl mx-auto mb-20">
             <AnimatedReveal direction="up">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-black text-brand-dark mb-6">
