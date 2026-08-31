@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Phone, Mail, Globe, MapPin, MessageCircle, Share2 } from "lucide-react";
-import { AnimatedReveal } from "@/components/AnimatedReveal";
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -78,7 +78,7 @@ export default function ConnectPage() {
       <div className="w-full max-w-lg z-10 flex flex-col items-center w-full">
         
         {/* Profile Header */}
-        <AnimatedReveal direction="up" className="flex flex-col items-center text-center mb-10 w-full">
+        <div className="flex flex-col items-center text-center mb-10 w-full">
           <h1 className="text-4xl md:text-5xl font-heading font-black text-white mb-3 tracking-tight">
             Mazin Solution
           </h1>
@@ -87,12 +87,12 @@ export default function ConnectPage() {
             <span className="text-sm text-gray-400 normal-case">(توريد وخدمات صناعية)</span>
           </p>
           <div className="w-20 h-1.5 bg-gradient-to-r from-brand-orange to-brand-gold rounded-full mt-5 shadow-[0_0_15px_rgba(255,102,0,0.5)]" />
-        </AnimatedReveal>
+        </div>
 
         {/* Links Grid */}
         <div className="w-full space-y-4">
           {links.map((link, index) => (
-            <AnimatedReveal key={index} direction="up" delay={0.1 + index * 0.05}>
+            <div key={index}>
               <a
                 href={link.href}
                 target={link.title === "Call Us" || link.title === "WhatsApp" ? "_self" : "_blank"}
@@ -117,7 +117,7 @@ export default function ConnectPage() {
                   <span className="opacity-100 group-hover:opacity-0 transition-opacity duration-300 transform translate-x-0 group-hover:translate-x-4">→</span>
                 </div>
               </a>
-            </AnimatedReveal>
+            </div>
           ))}
         </div>
 
