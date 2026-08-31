@@ -117,6 +117,23 @@ const serviceData: Record<string, ServiceData> = {
       { step: "Safe Execution", desc: "Executing the lift under the supervision of seasoned rigging engineers with strict safety compliance." }
     ]
   },
+  "sandblasting-and-coating": {
+    title: "Sandblasting and Coating",
+    image: "/images/sandblasting_hero.jpg",
+    overview: "Mazin Solution provides premium sandblasting and coating services for industrial and commercial projects. We utilize state-of-the-art equipment and specialized techniques to prepare surfaces and apply protective coatings that extend the lifespan of your critical infrastructure, ensuring resilience against harsh environmental conditions.",
+    capabilities: [
+      "High-Performance Industrial Sandblasting",
+      "Specialized Protective Coating Application",
+      "Corrosion Control and Surface Preparation",
+      "Pipeline and Tank Coating Solutions"
+    ],
+    process: [
+      { step: "Surface Inspection", desc: "Assessing the condition of the substrate and determining the optimal preparation method." },
+      { step: "Sandblasting", desc: "Removing rust, old paint, and contaminants using advanced abrasive blasting techniques." },
+      { step: "Coating Application", desc: "Applying high-quality protective coatings to ensure maximum durability and corrosion resistance." },
+      { step: "Quality Assurance", desc: "Conducting rigorous inspections to guarantee coating thickness and adhesion meet industry standards." }
+    ]
+  },
   "default": {
     title: "Specialized Engineering Services",
     image: "/images/image.png",
@@ -242,7 +259,8 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                         "Transportation and Logistics",
                         "Trading and Material Supply",
                         "Portacabin and Container Services",
-                        "Heavy Lifting Service"
+                        "Heavy Lifting Service",
+                        "Sandblasting and coating"
                       ].map(s => (
                         <li key={s}>
                           <Link href={`/services/${s.toLowerCase().replace(/ /g, '-')}`} className="text-gray-400 hover:text-brand-orange transition-colors text-sm flex items-center gap-2">

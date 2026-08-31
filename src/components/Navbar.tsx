@@ -22,6 +22,7 @@ const navLinks = [
       { name: "Trading and Material Supply", href: "/services/trading-and-material-supply", image: "/images/trading_solutions_hero.jpg" },
       { name: "Portacabin & Container Services", href: "/services/portacabin-and-container-services", image: "/images/portacabin_av_hero.jpg" },
       { name: "Heavy Lifting Service", href: "/services/heavy-lifting-service", image: "/images/hero_4.png" },
+      { name: "Sandblasting and coating", href: "/services/sandblasting-and-coating", image: "/images/sandblasting_hero.jpg" },
     ]
   },
   { name: "Why Us", href: "/why-us" },

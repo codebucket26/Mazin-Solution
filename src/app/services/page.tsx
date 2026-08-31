@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Building2, Wrench, Factory, Truck, HardHat, Users } from "lucide-react";
+import { ArrowRight, Building2, Wrench, Factory, Truck, HardHat, Users, Paintbrush } from "lucide-react";
 import { AnimatedReveal } from "@/components/AnimatedReveal";
 import type { Metadata } from "next";
 
@@ -51,6 +51,13 @@ const services = [
     icon: Wrench,
     slug: "heavy-lifting-service",
     image: "/images/hero_4.png"
+  },
+  {
+    title: "Sandblasting and coating",
+    description: "Premium industrial sandblasting and protective coating services for enhanced infrastructure durability.",
+    icon: Paintbrush,
+    slug: "sandblasting-and-coating",
+    image: "/images/sandblasting_hero.jpg"
   }
 ];
 

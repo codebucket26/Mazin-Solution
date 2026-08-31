@@ -5,12 +5,16 @@ import { motion, AnimatePresence, Variants } from "framer-motion";
 import { X, Send, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export function PopupForm() {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [formStatus, setFormStatus] = useState<"idle" | "submitting" | "success">("idle");
 
   useEffect(() => {
+    if (pathname === "/connect") return;
+
     // Opens after 3 seconds when the layout mounts
     const timer = setTimeout(() => {
       setIsOpen(true);
@@ -63,6 +67,8 @@ export function PopupForm() {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { type: "spring", damping: 20 } }
   };
+
+  if (pathname === "/connect") return null;
 
   return (
     <AnimatePresence>
@@ -207,6 +213,7 @@ export function PopupForm() {
                           <option value="Trading & Materials">Trading & Material Supply</option>
                           <option value="Portacabins">Portacabins & Containers</option>
                           <option value="Heavy Lifting">Heavy Lifting</option>
+                          <option value="Sandblasting and coating">Sandblasting and coating</option>
                           <option value="Other">Other / General Inquiry</option>
                         </select>
                         <div className="absolute inset-y-0 right-5 flex items-center pointer-events-none">
