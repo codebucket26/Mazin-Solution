@@ -11,15 +11,7 @@ export const metadata: Metadata = {
 
 export default function ConnectPage() {
   const links = [
-    {
-      title: "Call Us",
-      subtitle: "+0547505541",
-      icon: Phone,
-      href: "tel:+966533224176",
-      color: "text-blue-500",
-      bg: "bg-blue-500/10",
-      border: "hover:border-blue-500/50"
-    },
+  
     {
       title: "WhatsApp",
       subtitle: "+966 54 750 5541",
