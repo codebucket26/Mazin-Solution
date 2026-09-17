@@ -13,7 +13,7 @@ export default function ConnectPage() {
   const links = [
     {
       title: "Call Us",
-      subtitle: "+966 53 322 4176",
+      subtitle: "+0547505541",
       icon: Phone,
       href: "tel:+966533224176",
       color: "text-blue-500",
@@ -22,7 +22,7 @@ export default function ConnectPage() {
     },
     {
       title: "WhatsApp",
-      subtitle: "+966 53 322 4176",
+      subtitle: "+966 54 750 5541",
       icon: MessageCircle,
       href: "https://wa.me/966533224176",
       color: "text-green-500",

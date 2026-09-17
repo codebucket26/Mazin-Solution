@@ -78,7 +78,7 @@ export default function ContactPage() {
                     <div>
                       <h4 className="font-heading font-bold text-brand-dark mb-2">Phone</h4>
                       <p className="text-brand-gray text-sm leading-relaxed">
-                        +966 53 322 4176
+                       +966 54 750 5541
                       </p>
                     </div>
                   </div>
@@ -166,7 +166,7 @@ export default function ContactPage() {
                         id="phone" 
                         name="phone"
                         className="w-full px-4 py-3 bg-brand-light/50 border border-gray-200 rounded-md text-brand-dark focus:outline-none focus:ring-2 focus:ring-brand-orange focus:border-transparent transition-all"
-                        placeholder="+966 53 322 4176"
+                        placeholder="+966 54 750 5541"
                       />
                     </div>
                     <div className="space-y-2">
